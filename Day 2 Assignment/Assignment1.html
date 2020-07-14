@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Functions</title>
+</head>
+
+<body>
+    <h1>Explain about Console Function.</h1>
+    <ol>
+        <li>console.log()</li>
+        <p>Mainly used to log(print) the output to the console. We can put any type inside the log(), be it a string,
+            array, boolean etc.</p>
+
+        <li>console.error()</li>
+        <p>Used to print error message to the console. Useful in testing of code. By default the error message will be
+            highlighted with red color.</p>
+
+        <li>console.warn()</li>
+        <p>Used to print warning message to the console. By default the warning message will be highlighted with yellow
+            color.</p>
+
+        <li>console.clear()</li>
+        <p>Used to clear the console.</p>
+
+        <li>console.table()</li>
+        <p>This method allows us to generate a table inside a console. The input must be an array or an object which
+            will be shown as a table.</p>
+
+        <li>custom console log</li>
+        <p> User can add Styling to the console logs in order to make logs Custom.</p>
+
+
+    </ol>
+    <script>
+        console.log(" This is a String");
+        //It print string on the console window
+        console.log(56);
+        //It print integer on the console window
+        console.log(false);
+        //It print boolean on the console window
+        console.log([1, 2, 3, 4, 5, 67]);
+        //It print Array on the console window
+        console.log({ a: 1, b: 2, c: 3, d: 4 })
+
+        console.error("Error occured");
+        //Used to print error message on the console
+
+        console.warn("Some warnings are Occured");
+        //It is used to print warning message on the console
+
+
+
+        var a = { name: 'Shubham', age: 21, city: 'Indore' }
+        var b = { name: 'Shivam', age: 21, city: 'Indore' }
+        var c = { name: 'Rahul', age: 21, city: 'Indore' }
+        console.table({ a, b, c });
+
+        console.log('%c This is a custom log', 'color:blue;')
+
+          // console.clear();            
+           //It is used to clear the console and it can't be take any arrguments
+
+
+    </script>
+
+</body>
+
+</html>

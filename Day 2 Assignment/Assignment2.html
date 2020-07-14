@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference between var , let and const</title>
+</head>
+
+<body>
+    <h1>Difference between var , let and const </h1>
+    <dl>
+        <dt>var</dt>
+        <dd>Scope can be global and function,But it's scope can not be block.variables can be reassigned.it also be re-declared.</dd>
+        <dt>let</dt>
+        <dd>Scope can be function and block only it's scope can not be global.and it also be reassigned but not be re-declared</dd>
+        <dt>const</dt>
+        <dd>Scope can be function and block only it's scope can not be global.but it can not be reassigned or re-declared.It is necessory to initialize the const at the time of declaration.</dd>
+    </dl>
+    <script>
+        // var
+        var a = 10;
+        console.log(a);
+        var greeter = "hey hi";
+
+        function newFunction() {
+            var hello = "hello";
+        }
+        console.log(greeter);
+       // console.log(hello); //it gives an error "hello is  not defined" because scope of the hello variable is only inside the function.
+        a = 50;
+        console.log(a); // variable a reassigned from value 10 to 50
+        var a = "Shubham";
+        console.log(a); // variable can be re-declared
+
+        //let
+        let greeting = "say Hi";
+   let times = 4;
+
+   if (times > 3) {
+        let hello = "say Hello ";
+        console.log(hello);//"say Hello "
+    }
+  // console.log(hello) // it gives an error "hello is  not defined"
+  let b = 700;
+  b = 800;
+  console.log(b);
+ // let b = 900;   this will return an error.
+
+
+ //const
+ //const abc;  //it gives error "Const must be initialized".
+ const c = 10;
+ console.log(c);
+
+ //c = 40;  it gives an error "Assignment to const"
+
+// const c = 90;    it gives an error "Let/Const redeclaration"
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
